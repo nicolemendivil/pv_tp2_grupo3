@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ 15</title>
+</head>
+<body>
+    <script>
+        
+        
+        const retornarMes=(numero)=>{
+            const meses=["Enero","Febrero","Marzo", "Abril", "Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre", "Diciembre"];
+            if(numero>=1 && numero<=12){
+                return meses[numero-1];
+            }else{
+                return(`Numero invalido`)
+            }
+        }
+        let numero=Number(prompt(`Ingrese un numero, por favor` ));
+        document.write(retornarMes(numero));
+    </script>
+</body>
+</html>

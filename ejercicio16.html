@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ 16</title>
+  </head>
+  <body>
+    <script>
+      let num1;
+      let num2;
+ 
+      // Primer número, validación para que el usuario ingrese un numero valido
+      do {
+        num1 = Number(prompt(`Ingrese el primer valor:`));
+
+        if (isNaN(num1)) {
+          alert(`Debes ingresar un número válido`);
+        }
+      } while (isNaN(num1));
+
+      // Segundo número, validación para que el usuario ingrese un numero valido
+      do {
+        num2 = Number(prompt(`Ingrese el segundo valor: `));
+
+        if (isNaN(num2)) {
+          alert(` Debes ingresar un número válido`);
+        } else if (num2 < num1) {
+          alert(`El segundo número debe ser mayor o igual al primero`);
+        }
+      } while (isNaN(num2) || num2 < num1);
+
+      const sumarRango = (num1, num2) => {
+        let suma = 0;
+        for (let i = num1; i <= num2; i++) {
+          suma = suma + i;
+        }
+        return suma;
+      };
+      document.write(`La suma del rango ${num1} y ${num2} es:${sumarRango(num1, num2)}`);
+    </script>
+  </body>
+</html>

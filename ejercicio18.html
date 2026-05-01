@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ 18</title>
+  </head>
+  <body>
+    <script>
+      let num1;
+      let num2;
+
+      // Primer número, para corroborar que el usuario ingrese un numero
+      do {
+        num1 = Number(prompt(`Ingrese primer valor: `));
+
+        if (isNaN(num1)) {
+          alert(`Debes ingresar un número válido`);
+        }
+      } while (isNaN(num1));
+
+      // Segundo número, para corroborar que el usuario ingrese un numero
+      do {
+        num2 = Number(prompt(`Ingrese segundo valor: `));
+
+        if (isNaN(num2)) {
+          alert(`Debes ingresar un número válido`);
+        }
+      } while (isNaN(num2));
+      const calcularMayor = (num1, num2) => {
+        if (num1 > num2) {
+          return (`${num1} es mayor que ${num2}`);
+        } else if (num2 > num1) {
+          return (`${num2} es mayor que ${num1}`);
+        } else {
+          return (`Son iguales`);
+        }
+      };
+
+      document.write(calcularMayor(num1, num2));
+    </script>
+  </body>
+</html>

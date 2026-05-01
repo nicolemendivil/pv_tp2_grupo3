@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ 10</title>
+</head>
+<body>
+    <script>
+        let numero;
+        let numeros=[];
+        let promedio;
+        let cantNumSolicitados= Number(prompt(`Indique la cantidad de numeros que va a ingresar :`));
+        for(let i=0; i<cantNumSolicitados;i++){
+            numero=Number(prompt(`Ingrese un numero:`));
+            numeros.push(numero);
+        }
+        const sumaNum = numeros.reduce((acc, num) => acc + num, 0);
+        promedio=sumaNum/numeros.length;
+        document.write(`Numeros ingresados: ${numeros}<br>`)
+        document.write(`Promedio de los valores: ${promedio}`)
+    </script>
+</body>
+</html>

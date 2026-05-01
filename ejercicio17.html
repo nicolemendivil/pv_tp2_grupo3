@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ 17</title>
+</head>
+<body>
+    <script>
+        
+        const contarLetraA=(cadena)=>{
+            let sumaDeA=0;
+            for(let i=0;i<cadena.length;i++){
+                if(cadena[i]=='a'||cadena[i]=='A')
+                    sumaDeA++;
+            }
+            return sumaDeA;
+        }
+        let cadena= prompt(`Ingrese una palabra: `);
+        document.write(`La cadena ${cadena} tiene ${contarLetraA(cadena)} A`)
+    </script>
+</body>
+</html>
