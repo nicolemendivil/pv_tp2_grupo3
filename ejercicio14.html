@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio14</title>
+</head>
+<body>
+    <script>
+        let cantidad=prompt(`ingrese cantidad de numeros que desea agregar al arreglo:`);
+        let numero=[];
+        for(let i=0;i<cantidad;i++){
+            let num= Number(prompt(`ingresar numero:`));
+            numero.push(num);
+        }
+        
+        const duplicar = (arr) => {
+             return arr.map(num => num * 2);
+        }
+
+
+        let resultado = duplicar(numero);
+
+        document.write("Arreglo original:<br>");
+        numero.forEach(num => {
+        document.write(`${num} <br>`);
+        });
+
+        document.write("<br>Arreglo duplicado:<br>");
+        resultado.forEach(num => {
+        document.write(`${num} <br>`);
+        });
+    </script>
+    
+</body>
+</html>
