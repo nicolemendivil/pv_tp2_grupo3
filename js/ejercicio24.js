@@ -1,10 +1,10 @@
-import { mostrarLenguaje } from "./mostrarLenguaje.js";
-const parrafo = document.getElementById('descripcion');
-const opciones = document.querySelectorAll('input[name="lenguaje"]');
+import { mostrarLenguaje } from "./funciones24.js";
 
-opciones.forEach(opcion => {
-    opcion.addEventListener('change', (event) => {
-        const valor = event.target.value;
-        mostrarLenguaje(parrafo,valor);
-    });
+const parrafo = document.getElementById('descripcion');
+const formulario = document.getElementById('mostrarLenguaje');
+
+formulario.addEventListener('change', (event) => {
+    const valor = event.target.value;
+    mostrarLenguaje(parrafo, valor);
+
 });
