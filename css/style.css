@@ -3,13 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
-}
 body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    height: 100vh;
+    height: 80vh;
     display: grid;
     place-items: center; 
     background-color: slategrey;
@@ -93,4 +90,26 @@ h3{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+/*css ejercicio 22 y 23*/
+#h2-ej22{
+    color: rgb(236, 114, 0, 0.96);
+    font-size: 30px;
+    text-shadow: 0px 0px 5px rgb(145, 73, 1);
+}
+#texto{
+    padding: 8px;
+    font-size: 20px;
+}
+#resultado{
+    font-size: 20px;
+     margin-top: 20px;
+}
+#contenedor22-23{
+    background-color: green ;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px 0 #0007;
+    max-width: 350px;
+    width: 100%;
 }
